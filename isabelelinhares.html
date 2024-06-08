@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabele Linhares - Psicóloga</title>
+    <link rel="icon" type="image/x-icon" href="images/encidentidadevisual/ICONE_COR.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <div class="header_container">
+        <div class="d-flex menu_container">
+            <div class="logo">
+                <img src="images/encidentidadevisual/logo_cortado.jpg" alt="Isabele Linhares logo">
+            </div>
+            <nav>
+                <a class="menu_button" href="#home">Início</a>
+                <a class="menu_button" href="#about">Sobre</a>
+                <a class="menu_button" href="#therapy">Terapia</a>
+                <a class="menu_button" href="#testimonials">Depoimentos</a>
+                <a class="menu_button" href="#faq">FAQ</a>
+            </nav>
+            <div class="contact-icon">
+                <a href="https://www.instagram.com/isabelelinhares.psi/?hl=fr" class="fa fa-instagram"></a>
+                <a href="api.whatsapp.com/send?phone=5586994082684" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página Inicial -->
+    <section id="home">
+        <div class="container_apresentacao">
+            <div class="texto_apresentacao">
+                <h1>Isabele Linhares </h1>
+                <h3>Psicóloga
+                    CRP 01/26720</h3>
+                <p>Com você, na trajetória</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="therapy">
+        <div class="container_terapia">
+            <h1>Saiba como posso te ajudar!</h1>
+            <div class="container_outer_checklist">
+                <div class="container_checklist">
+                    <div class="imagem_terapia">
+                        <img src="images/encidentidadevisual/Captura_de_tela_2024-05-22_203909-removebg-preview.png" alt="Efeito Psicologia">
+                    </div>
+                </div>
+                <div class="container_checklist">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="texto_sobre">
+                <h1>Sobre a Psicóloga</h1>
+                <p>A Dra. Isabele é uma profissional dedicada e apaixonada pela psicologia, 
+                com uma trajetória acadêmica e profissional marcada pelo compromisso com 
+                o bem-estar e a resiliência de seus pacientes. Graduada em Psicologia pela 
+                Universidade Federal, Ana buscou aprimorar seus conhecimentos ao obter seu 
+                mestrado em Psicologia Clínica, com foco na compreensão do trauma infantil 
+                e da resiliência.</p>
+            </div>
+            <div class="imagem_sobre">
+                <img src="images/encidentidadevisual/IMG_8781_cropped.png" alt="Isabele Linhares apresentacao">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="testimonial-box">
+                <p>Depoimento do primeiro paciente.</p>
+            </div>
+            <div class="testimonial-box">
+                <p>Depoimento do segundo paciente.</p>
+            </div>
+            <!-- Adicione mais depoimentos conforme necessário -->
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Dúvidas Frequentes</h2>
+            <div class="faq-box" onclick="toggleFAQ('faq1')">
+                <p>Qual é a abordagem terapêutica utilizada?</p>
+                <div class="faq-answer" id="faq1">Resposta à pergunta.</div>
+            </div>
+            <div class="faq-box" onclick="toggleFAQ('faq2')">
+                <p>Qual é o custo das sessões?</p>
+                <div class="faq-answer" id="faq2">Resposta à pergunta.</div>
+            </div>
+            <!-- Adicione mais perguntas e respostas conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <h3>Contato</h3>
+            <p>Informações de contato e horário disponível.</p>
+        </div>
+    </footer>
+
+    <!-- Script para expandir as respostas do FAQ -->
+    <script>
+        function toggleFAQ(id) {
+            var faq = document.getElementById(id);
+            if (faq.style.display === "block") {
+                faq.style.display = "none";
+            } else {
+                faq.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
